@@ -1,37 +1,117 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>r3tr0 Music Player</title>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'><link rel="stylesheet" href="./style.css">
 
-You can use the [editor on GitHub](https://github.com/r3tr013/r3tr013.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
+</head>
+<body>
+<article class="screen">
+  <input type="checkbox" value="None" id="magicButton" name="check" />
+  <label class="main" for="magicButton"></label>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+  <div class="coverImage"></div>
+  <div class="search"></div>
+  <div class="bodyPlayer"></div>
 
-### Markdown
+  <table class="list">
+    <tr class="song">
+      <td class="nr">
+        <h5>1<h5></td>
+						<td class="title"><h6>Heavydirtysoul<h6></td>
+						<td class="length"><h5>3:54<h5></td>
+						<td><input type="checkbox" id="heart"/><label class="zmr" for="heart"></label></td>
+					</tr>
+				
+					<tr class="song">
+						<td class="nr"><h5>2<h5></td>
+						<td class="title"><h6 style="color: #ff564c;">StressedOut<h6></td>
+						<td class="length"><h5>3:22<h5></td>
+						<td><input type="checkbox" id="heart1" checked /><label class="zmr" for="heart1"></label></td>
+					</tr>
+				
+					<tr class="song">
+						<td class="nr"><h5>3<h5></td>
+						<td class="title"><h6>Ride<h6></td>
+						<td class="length"><h5>3:34<h5></td>
+						<td><input type="checkbox" id="heart2"/><label class="zmr" for="heart2"></label></td>
+					</tr>
+				
+					<tr class="song">
+						<td class="nr"><h5>4<h5></td>
+						<td class="title"><h6>Fairy Local<h6></td>
+						<td class="length"><h5>3:27<h5></td>
+						<td><input type="checkbox" id="heart3" checked /><label class="zmr" for="heart3"></label></td>
+					</tr>
+					
+					<tr class="song">
+						<td class="nr"><h5>5<h5></td>
+						<td class="title"><h6>Tear in My Heart<h6></td>
+						<td class="length"><h5>3:08<h5></td>
+						<td><input type="checkbox" id="heart4"/><label class="zmr" for="heart4"></label></td>
+					</tr>
+					
+					<tr class="song">
+						<td class="nr"><h5>6<h5></td>
+						<td class="title"><h6>Lane Boy<h6></td>
+						<td class="length"><h5>4:13<h5></td>
+						<td><input type="checkbox" id="heart5"/><label class="zmr" for="heart5"></label></td>
+					</tr>
+					
+					<tr class="song">
+						<td class="nr"><h5>7<h5></td>
+						<td class="title"><h6>The Judge<h6></td>
+						<td class="length"><h5>4:57<h5></td>
+						<td><input type="checkbox" id="heart6"/><label class="zmr" for="heart6"></label></td>
+					</tr>
+					
+					<tr class="song">
+						<td class="nr"><h5>8<h5></td>
+						<td class="title"><h6>Doubt<h6></td>
+						<td class="length"><h5>3:11<h5></td>
+						<td><input type="checkbox" id="heart7"/><label class="zmr" for="heart7"></label></td>
+					</tr>
+					
+					<tr class="song">
+						<td class="nr"><h5>9<h5></td>
+						<td class="title"><h6>Polarize<h6></td>
+						<td class="length"><h5>3:46<h5></td>
+						<td><input type="checkbox" id="heart8"/><label class="zmr" for="heart8"></label></td>
+					</tr>
+				</table>
+				
+				<div class="shadow"></div>
+				
+				<div class="bar"></div>
+				
+				<div class="info">
+					<h4>STRESSED OUT</h4>
+					<h3>twenty one pilots - Blurryface</h3>
+				</div>
+<audio preload="auto" id="audio" controls>
+  <source src="http://www.jplayer.org/audio/mp3/Miaow-02-Hidden.mp3">
+  <source src="http://www.jplayer.org/audio/mp3/Miaow-02-Hidden.ogg">
+	</audio>
+				<table class="player">
+					<td><input type="checkbox" id="backward"/><label class="backward" for="backward"></label></td>
+					<td><input type="checkbox" id="play" title="Play" onclick="togglePlayPause()"/><label class="play" for="play"></label></td>
+					<td><input type="checkbox" id="forward"/><label class="forward" for="forward"></label></td>
+				</table>
+				
+				<table class="footer">
+					<td><input type="checkbox" id="love" checked /><label class="love" for="love"></label></td>
+					<td><input type="checkbox" id="shuffle"/><label class="shuffle" for="shuffle"></label></td>
+					<td><input type="checkbox" id="repeat" checked /><label class="repeat" for="repeat"></label></td>
+					<td><input type="checkbox" id="options"/><label class="options" for="options"></label></td>
+				</table>
+				
+				<div class="current"><h2>STRESSED OUT</h2></div>
+				
+			
+		</article>
+<!-- partial -->
+  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="./script.js"></script>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/r3tr013/r3tr013.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+</body>
+</html>
